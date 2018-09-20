@@ -1,0 +1,36 @@
+{
+    "url"                   : "https://harvester.census.gov/facdissem/SearchA133.aspx",
+    "comment_headless"      : "integer headlessMode can be 1 or 0, for invisible or visible firefox unquoted",
+    "headlessMode"          : 0,
+    "rangefrom"             : "02/09/2017",
+    "rangeto"               : "02/11/2017",
+    
+    "comment1_directories"  : "make sure that all directories are previosly created",
+    "comment2_directories"  : "example for linux and macos /home/someuser/somedirectory/",
+    "comment3_directories"  : "example for windows D:\\data\\somedirectory\\",
+    "dir_in"                : "D:\\data\\upwork\\Marc_Joffe\\",
+    "dir_downloads"         : "D:\\data\\upwork\\Marc_Joffe\\downloads\\",
+    "dir_pdfs"              : "D:\\data\\upwork\\Marc_Joffe\\pdfs\\",
+    
+    "usemarionette_comment" : "integer 0 will use default firefox, 1 will use geckodriver if properly installed",
+    "usemarionette"         : 1,
+    
+    "todownload_comment1"   : "can be integer 0 to skip download or 1 to process download in get_FAC.py",
+    "todownload_comment2"   : "in case for 0, it will process zip files stored in dir_downloads",
+    "todownload"            : 1,
+    
+    "comment_xlsx_short"    : "place file for shortening names in dir_in directory",
+    "fileshortnames"        : "SingleAuditees.xlsx",
+    "sheetShortName"        : "Entity List",
+    
+    "comment1_sleeptime"    : "integer, this will be used while donwloading files (in cycles)",
+    "comment2_sleeptime"    : "also giving time for os.rename to be executed integer unquoted",
+    "sleeptime"             : 10,
+    
+    "server"                : "ftp.govwiki.info",
+    "port_comment"          : "port in next line should be integer value, not string, default is 21",
+    "port"                  : 21,
+    "username_comment"      : "example: someuser@govwiki.info",
+    "username"              : "staging@govwiki.info",
+    "password"              : [ASK SYSTEM ADMINISTRATOR]
+}
